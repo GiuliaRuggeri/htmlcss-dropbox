@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: sans-serif;
 }
 
 header {
@@ -16,8 +16,7 @@ header {
 
 }
 
-header,
-a {
+header a {
     text-decoration: none;
     color: black;
 }
@@ -39,9 +38,39 @@ main {
     margin-right: 8px;
 }
 
+
+#buttongray{
+    border: solid 1px gray;
+    padding: 8px;
+    background-color: white;
+    margin-top: 10px;
+}
+
 .title {
     font-weight: bold;
 }
+
+.arrow {
+    bottom: 5px;
+}
+
+hr {
+    width: 50px;
+    margin-top: 30px;
+}
+
+.boximg{
+    filter: invert(1);
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.smallbox{
+    width: 200px;
+    height: 200px;
+}
+
 
 /* * ALTEZZA */
 
@@ -49,8 +78,20 @@ main {
     min-height: 50px;
 }
 
+.min-height-705{
+    min-height: 705px
+}
+
 .max-height-450 {
     max-height: 450px;
+}
+
+.height-2em {
+    height: 2em;
+}
+
+.height-400{
+    height: 400px;
 }
 
 /* * PADDING * */
@@ -62,10 +103,36 @@ main {
     padding-top: 60px;
 }
 
+.padding-10 {
+    padding: 10px;
+}
+
+.padding-20 {
+    padding: 20px
+}
+
+.padding-8 {
+    padding: 0 8px;
+}
+
+/* * POSITION * */
+
+.position-rel {
+    position: relative;
+}
+
+.position-abs {
+    position: absolute;
+}
+
 /* * MARGINI * */
 
 .margin-auto {
     margin: auto;
+}
+
+.margin-40{
+    margin: 40 0 40 0;
 }
 
 .margin-right-10 {
@@ -92,8 +159,12 @@ main {
     margin-top: 20px;
 }
 
-.margin-top-100 {
-    margin-top: 100px;
+.margin-top-30{
+    margin-top: 30px;
+}
+
+.margin-top-80 {
+    margin-top: 80px;
 }
 
 .margin-bottom-10 {
@@ -104,8 +175,18 @@ main {
     margin-bottom: 20px;
 }
 
+.margin-bottom-40{
+    margin-bottom: 40px;
+}
+
+/* * BORDER * */
+
 .border-gray {
     border: solid 1px gray;
+}
+
+.border-bottom {
+    border-bottom: solid 1px gray;
 }
 
 
@@ -124,25 +205,31 @@ main {
     width: 30%;
 }
 
+.width-50{
+    width: 50%;
+}
+
 .width-60 {
     width: 60%;
 }
 
-.width-66 {
-    width: 66%;
+
+.width-70 {
+    width: 70%
 }
 
-.width-33 {
-    width: 33%;
+.width-30 {
+    width: 30%
 }
 
 
 .width-calc1 {
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 20px);
 }
 
 .width-calc2 {
     width: calc(100% / 2);
+    height: calc(100% / 2);
 }
 
 .widt-calc3 {
@@ -177,12 +264,16 @@ main {
     color: white;
 }
 
-.font-size {
+.font-size-40{
     font-size: 40px;
 }
 
 .font-58 {
     font-size: 58px;
+}
+
+.font-size-30{
+    font-size: 30px;
 }
 
 .text-center {
@@ -199,6 +290,12 @@ main {
     display: flex;
 }
 
+/* * FLEX * */
+
+.flex {
+    display: flex;
+}
+
 .flex-direction {
     flex-direction: column;
 }
@@ -211,9 +308,22 @@ main {
     justify-content: space-around;
 }
 
-.justify-end {
-    justify-content: flex-end;
+.justify-center {
+    justify-content: center;
 }
+
+.justify-left {
+    justify-content: left;
+}
+
+.align-start{
+    align-items: start;
+}
+
+
+/* .justify-end {
+    justify-content: flex-end;
+} */
 
 .flex-wrap {
     flex-wrap: wrap;
